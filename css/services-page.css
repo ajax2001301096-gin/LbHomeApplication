@@ -1,0 +1,477 @@
+/* ==============================================
+   SERVICES PAGE SPECIFIC STYLES - ELEGANT & PROFESSIONAL
+   ============================================== */
+
+/* PAGE HERO */
+.page-hero {
+    margin-top: 73px;
+    height: 350px;
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=800&fit=crop');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+
+.hero-overlay {
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+    z-index: 1;
+}
+
+.page-title {
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    letter-spacing: 8px;
+}
+
+.page-subtitle {
+    font-size: 14px;
+    margin-bottom: 25px;
+    opacity: 0.7;
+    font-weight: 300;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.breadcrumb a {
+    color: var(--white);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    opacity: 1;
+}
+
+.breadcrumb span {
+    opacity: 0.5;
+}
+
+/* SERVICES INTRO */
+.services-intro {
+    padding: 90px 0;
+    background: var(--white);
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.intro-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.services-intro .section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.intro-text {
+    font-size: 15px;
+    line-height: 2;
+    color: var(--text-light);
+}
+
+/* SERVICE DETAIL SECTIONS */
+.service-detail {
+    padding: 100px 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.service-detail:nth-child(even) {
+    background: var(--bg-light);
+}
+
+.service-content {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.service-content.reverse {
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.service-text {
+    flex: 1;
+}
+
+.service-image {
+    flex: 1;
+    overflow: hidden;
+    max-width: 500px;
+}
+
+/* Service Slideshow */
+.service-slideshow {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slideshow-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slideshow-item.active {
+    opacity: 1;
+}
+
+.slideshow-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 25px;
+    opacity: 0.85;
+}
+
+.service-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.service-title {
+    font-size: 28px;
+    color: var(--secondary-color);
+    margin-bottom: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.service-description {
+    font-size: 15px;
+    line-height: 2;
+    color: var(--text-light);
+    margin-bottom: 50px;
+}
+
+/* SERVICE FEATURES - CLEAN MINIMAL STYLE */
+.service-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 50px;
+}
+
+.feature-item {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    padding: 35px 0;
+    border-bottom: 1px solid var(--border-color);
+    transition: padding-left 0.3s ease;
+}
+
+.feature-item:first-child {
+    padding-top: 0;
+}
+
+.feature-item:last-child {
+    border-bottom: none;
+}
+
+.feature-item:hover {
+    padding-left: 15px;
+}
+
+.feature-icon {
+    width: 45px;
+    height: 45px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 18px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover .feature-icon {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.feature-content h3 {
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-bottom: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.feature-content p {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--text-light);
+}
+
+.service-cta {
+    margin-top: 40px;
+}
+
+/* WHY CHOOSE US - REFINED GRID */
+.why-choose-us {
+    padding: 100px 0;
+    background: var(--white);
+    text-align: center;
+}
+
+.why-choose-us .section-title {
+    font-size: 32px;
+    margin-bottom: 80px;
+    color: var(--secondary-color);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: var(--border-color);
+    border: 1px solid var(--border-color);
+}
+
+.reason-card {
+    background: var(--white);
+    padding: 50px 40px;
+    position: relative;
+    transition: background 0.3s ease;
+    text-align: left;
+}
+
+.reason-card:hover {
+    background: var(--bg-light);
+}
+
+.reason-number {
+    font-size: 48px;
+    color: var(--primary-color);
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 25px;
+    opacity: 0.3;
+}
+
+.reason-card h3 {
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin-bottom: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.reason-card p {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--text-light);
+}
+
+/* CTA SECTION - ELEGANT STYLE */
+.cta-section {
+    padding: 100px 0;
+    background: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.cta-content p {
+    font-size: 15px;
+    margin-bottom: 50px;
+    opacity: 0.8;
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: transparent;
+    color: var(--white);
+    padding: 14px 40px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.btn-secondary:hover {
+    background: var(--white);
+    color: var(--secondary-color);
+    border-color: var(--white);
+}
+
+.btn-primary {
+    padding: 14px 40px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .service-content,
+    .service-content.reverse {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .reasons-grid {
+        grid-template-columns: 1fr;
+        gap: 1px;
+    }
+
+    .page-title {
+        font-size: 36px;
+        letter-spacing: 4px;
+    }
+
+    .service-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        height: 280px;
+    }
+
+    .page-title {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+
+    .page-subtitle {
+        font-size: 12px;
+        letter-spacing: 4px;
+    }
+
+    .services-intro {
+        padding: 60px 0;
+    }
+
+    .service-detail {
+        padding: 60px 0;
+    }
+
+    .service-content {
+        gap: 40px;
+    }
+
+    .service-image {
+        max-width: 100%;
+    }
+
+    .service-slideshow {
+        height: 400px;
+    }
+
+    .service-features {
+        gap: 0;
+    }
+
+    .feature-item {
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px 0;
+    }
+
+    .feature-item:hover {
+        padding-left: 0;
+    }
+
+    .why-choose-us {
+        padding: 60px 0;
+    }
+
+    .why-choose-us .section-title {
+        margin-bottom: 50px;
+    }
+
+    .reason-card {
+        padding: 40px 30px;
+    }
+
+    .cta-section {
+        padding: 60px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 26px;
+    }
+
+    .cta-content p {
+        font-size: 14px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+    }
+}
