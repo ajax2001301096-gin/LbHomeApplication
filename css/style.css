@@ -66,31 +66,6 @@ button {
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
-.header-top {
-    background: var(--secondary-color);
-    padding: 8px 0;
-}
-
-.header-top .container {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.contact-info {
-    display: flex;
-    gap: 30px;
-}
-
-.contact-info a {
-    color: var(--white);
-    font-size: 13px;
-}
-
-.contact-info a:hover {
-    color: var(--primary-color);
-}
-
 .navbar {
     background: var(--white);
     padding: 15px 0;
@@ -186,7 +161,7 @@ button {
    HERO SLIDER with 3D CUBE
    ============================================== */
 .hero-slider {
-    margin-top: 88px;
+    margin-top: 73px;
     height: 600px;
     perspective: 2000px;
     overflow: hidden;
