@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="stylesheet" href="../css/services-page.css" />
+    <link rel="stylesheet" href="../css/page-transition.css" />
 
     <!-- Font Awesome CDN -->
     <link
@@ -21,6 +22,23 @@
     />
   </head>
   <body>
+  <!-- PAGE LOADER - Thêm ngay sau <body> -->
+  <div class="page-loader">
+    <div class="loader-animation">
+      <div class="walking-person">
+        <i class="fas fa-walking"></i>
+      </div>
+      <div class="house-icon">
+        <i class="fas fa-home"></i>
+      </div>
+    </div>
+    <p class="loader-text">
+      Loading<span class="loading-dots"></span>
+    </p>
+    <div class="loader-progress">
+      <div class="loader-progress-bar"></div>
+    </div>
+  </div>
     <!-- HEADER -->
     <header class="header">
       <nav class="navbar">
@@ -392,6 +410,7 @@
     </button>
 
     <!-- JavaScript Files -->
+    <script src="../js/page-transition.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/services-slideshow.js"></script>
   </body>

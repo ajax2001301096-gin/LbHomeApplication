@@ -7,13 +7,12 @@
       name="description"
       content="株式会社ゆうらく - Liberty 不動産・清掃管理"
     />
-    <title>
-      トップ - 株式会社Liberty ｜ More Than Just A Home
-    </title>
+    <title>トップ - 株式会社Liberty ｜ More Than Just A Home</title>
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/page-transition.css" />
 
     <!-- Font Awesome CDN -->
     <link
@@ -22,18 +21,28 @@
     />
   </head>
   <body>
+    <!-- PAGE LOADER - Thêm ngay sau <body> -->
+    <div class="page-loader">
+      <div class="loader-animation">
+        <div class="walking-person">
+          <i class="fas fa-walking"></i>
+        </div>
+        <div class="house-icon">
+          <i class="fas fa-home"></i>
+        </div>
+      </div>
+      <p class="loader-text">Loading<span class="loading-dots"></span></p>
+      <div class="loader-progress">
+        <div class="loader-progress-bar"></div>
+      </div>
+    </div>
     <!-- HEADER -->
     <header class="header">
-      
-
       <nav class="navbar">
         <div class="container">
           <div class="logo">
             <a href="index.html">
-              <img
-                src="/images/logo/libertyhome-logo.png"
-                alt="Liberty Logo"
-              />
+              <img src="/images/logo/libertyhome-logo.png" alt="Liberty Logo" />
             </a>
           </div>
 
@@ -414,10 +423,7 @@
         <div class="footer-content">
           <!-- Footer Logo -->
           <div class="footer-logo">
-            <img
-              src="\images\logo\libertyhome-logo.png"
-              alt="Liberty Logo"
-            />
+            <img src="\images\logo\libertyhome-logo.png" alt="Liberty Logo" />
             <div class="social-links">
               <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
             </div>
@@ -447,7 +453,9 @@
               </li>
               <li>
                 <i class="fas fa-envelope"></i>
-                <a href="mailto:contact@Liberty.co.jp">liberty.jp23@gmail.com</a>
+                <a href="mailto:contact@Liberty.co.jp"
+                  >liberty.jp23@gmail.com</a
+                >
               </li>
               <li>
                 <i class="fas fa-phone"></i>
@@ -473,6 +481,7 @@
     </button>
 
     <!-- JavaScript Files -->
+    <script src="js/page-transition.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/counter.js"></script>
