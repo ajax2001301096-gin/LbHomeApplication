@@ -1,0 +1,629 @@
+/* ==============================================
+   ABOUT PAGE SPECIFIC STYLES - ELEGANT & PROFESSIONAL
+   ============================================== */
+
+/* PAGE HERO */
+.page-hero {
+    margin-top: 73px;
+    height: 350px;
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=800&fit=crop');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+
+.hero-overlay {
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+    z-index: 1;
+}
+
+.page-title {
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    letter-spacing: 8px;
+}
+
+.page-subtitle {
+    font-size: 14px;
+    margin-bottom: 25px;
+    opacity: 0.7;
+    font-weight: 300;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.breadcrumb a {
+    color: var(--white);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    opacity: 1;
+}
+
+.breadcrumb span {
+    opacity: 0.5;
+}
+
+/* COMPANY INTRO */
+.company-intro {
+    padding: 100px 0;
+    background: var(--white);
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.company-intro .section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.intro-lead {
+    font-size: 18px;
+    line-height: 1.9;
+    color: var(--text-color);
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+
+.intro-text {
+    font-size: 15px;
+    line-height: 2;
+    color: var(--text-light);
+}
+
+/* CEO MESSAGE */
+.ceo-message {
+    padding: 100px 0;
+    background: var(--bg-light);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ceo-message .section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px;
+    color: var(--secondary-color);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.ceo-content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.ceo-photo {
+    flex: 0 0 350px;
+    position: relative;
+}
+
+.ceo-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--border-color);
+}
+
+.ceo-name-card {
+    margin-top: 25px;
+    padding: 20px;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.ceo-position {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.ceo-name {
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.ceo-text {
+    flex: 1;
+}
+
+.greeting-text {
+    font-size: 15px;
+    line-height: 2;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.message-text {
+    font-size: 14px;
+    line-height: 2.1;
+    color: var(--text-light);
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.signature {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.signature p {
+    font-size: 14px;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+.signature-name {
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+/* COMPANY INFO TABLE */
+.company-info {
+    padding: 100px 0;
+    background: var(--bg-light);
+}
+
+.company-info .section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px;
+    color: var(--secondary-color);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.info-table {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+}
+
+.info-row {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    flex: 0 0 200px;
+    padding: 30px;
+    background: var(--bg-light);
+    border-right: 1px solid var(--border-color);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    letter-spacing: 0.5px;
+}
+
+.info-value {
+    flex: 1;
+    padding: 30px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+/* PHILOSOPHY SECTION */
+.philosophy {
+    padding: 100px 0;
+    background: var(--white);
+    text-align: center;
+}
+
+.philosophy .section-title {
+    font-size: 32px;
+    margin-bottom: 60px;
+    color: var(--secondary-color);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.philosophy-item {
+    padding: 40px 30px;
+}
+
+.philosophy-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 25px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.philosophy-item:hover .philosophy-icon {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.philosophy-item h3 {
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.philosophy-item p {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--text-light);
+}
+
+/* BUSINESS GUIDELINES */
+.guidelines {
+    padding: 100px 0;
+    background: var(--bg-light);
+    border-top: 1px solid var(--border-color);
+}
+
+.guidelines-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border-color);
+    border: 1px solid var(--border-color);
+}
+
+.guideline-item {
+    background: var(--white);
+    padding: 50px 40px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.guideline-item:hover {
+    background: var(--bg-light);
+}
+
+.guideline-item h3 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.guideline-item p {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--text-light);
+}
+
+/* LOCATION MAP */
+.location-map {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.location-map .section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px;
+    color: var(--secondary-color);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.map-wrapper {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.map-container {
+    flex: 2;
+    border: 1px solid var(--border-color);
+}
+
+.map-container iframe {
+    display: block;
+}
+
+.access-info {
+    flex: 1;
+}
+
+.access-info h3 {
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.access-info h3:not(:first-child) {
+    margin-top: 35px;
+}
+
+.address {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--text-light);
+}
+
+.address i {
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.access-list {
+    list-style: none;
+    padding: 0;
+}
+
+.access-list li {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--text-light);
+    margin-bottom: 12px;
+}
+
+.access-list i {
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.contact-info {
+    font-size: 14px;
+    line-height: 2;
+    color: var(--text-light);
+}
+
+.contact-info i {
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.contact-info a {
+    color: var(--text-light);
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--primary-color);
+}
+
+/* CTA SECTION */
+.cta-section {
+    padding: 100px 0;
+    background: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.cta-content p {
+    font-size: 15px;
+    margin-bottom: 50px;
+    opacity: 0.8;
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: transparent;
+    color: var(--white);
+    padding: 14px 40px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.btn-secondary:hover {
+    background: var(--white);
+    color: var(--secondary-color);
+    border-color: var(--white);
+}
+
+.btn-primary {
+    padding: 14px 40px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .ceo-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ceo-photo {
+        flex: none;
+        max-width: 400px;
+    }
+
+    .philosophy-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .guidelines-wrapper {
+        grid-template-columns: 1fr;
+        gap: 1px;
+    }
+
+    .map-wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .page-title {
+        font-size: 36px;
+        letter-spacing: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        height: 280px;
+    }
+
+    .page-title {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+
+    .page-subtitle {
+        font-size: 12px;
+        letter-spacing: 4px;
+    }
+
+    .company-intro {
+        padding: 60px 0;
+    }
+
+    .ceo-message {
+        padding: 60px 0;
+    }
+
+    .ceo-photo {
+        max-width: 100%;
+    }
+
+    .message-text {
+        text-align: left;
+    }
+
+    .company-info {
+        padding: 60px 0;
+    }
+
+    .info-row {
+        flex-direction: column;
+    }
+
+    .info-label {
+        flex: none;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding: 20px;
+    }
+
+    .info-value {
+        padding: 20px;
+    }
+
+    .philosophy {
+        padding: 60px 0;
+    }
+
+    .guidelines {
+        padding: 60px 0;
+    }
+
+    .guideline-item {
+        padding: 35px 25px;
+    }
+
+    .location-map {
+        padding: 60px 0;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+
+    .cta-section {
+        padding: 60px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 26px;
+    }
+
+    .cta-content p {
+        font-size: 14px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+    }
+}
