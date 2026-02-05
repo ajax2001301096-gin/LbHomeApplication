@@ -1,0 +1,25 @@
+on:
+  schedule:
+    - cron: '18 8 * * 4'
+  pull_request:
+    branches:
+      - 'main'
+  workflow_dispatch:
+    inputs:
+      branch:
+        required: true
+        default: 'master'
+
+jobs:
+  initialize:
+    runs-on: ubuntu-latest
+    steps:
+      - name : 'TEST'
+        run: |
+          echo "> TEST" >> $GITHUB_STEP_SUMMARY
+
+  finalize:
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'All tests finished.'
